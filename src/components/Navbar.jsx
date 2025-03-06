@@ -7,7 +7,7 @@ const navItems = [
   {
     title: "HOME",
     path: "/",
-    hasDropdown: true,
+    hasDropdown: false,
     dropdownItems: [
       { title: "Home 1", path: "/home-1" },
       { title: "Home 2", path: "/home-2" },
@@ -17,7 +17,7 @@ const navItems = [
   {
     title: "PAGES",
     path: "/pages",
-    hasDropdown: true,
+    hasDropdown: false,
     dropdownItems: [
       { title: "About Us", path: "/about" },
       { title: "Services", path: "/services" },
@@ -27,7 +27,7 @@ const navItems = [
   {
     title: "SHOP",
     path: "/shop",
-    hasDropdown: true,
+    hasDropdown: false,
     dropdownItems: [
       { title: "Products", path: "/products" },
       { title: "Cart", path: "/cart" },
@@ -37,7 +37,7 @@ const navItems = [
   {
     title: "BLOG",
     path: "/blog",
-    hasDropdown: true,
+    hasDropdown: false,
     dropdownItems: [
       { title: "Blog Grid", path: "/blog-grid" },
       { title: "Blog List", path: "/blog-list" },
@@ -75,7 +75,7 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
             <a href="/" className="text-3xl font-bold text-gray-900">
-              Floda
+              <img src="assets/Images/logo/logo.png" alt="" srcset=""  className="h-16"/>
             </a>
           </div>
 
