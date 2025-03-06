@@ -3,6 +3,7 @@ import MainLayout from '@/layouts/MainLayout'
 import Home from '@/Pages/Home'
 import ProductPage from '@/Pages/ProductPage'
 import  Navbar  from '@/components/Navbar'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path="/product/:id" element={<ProductPage />} />
         </Routes>
       </MainLayout>
+      <Footer/>
     </Router>
   )
 }

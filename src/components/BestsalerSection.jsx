@@ -81,12 +81,12 @@ const  Necklace=[
 
 const BestsalerSection = () => {
   return (
-    <div className="container-fluid py-14 flex justify-center h-auto px-4 md:px-8 lg:px-16 ">
+    <div className="container-fluid py-14 flex justify-center h-auto px-9 md:px-8 lg:px-16 overflow-hidden">
         <Carousel
       opts={{
         align: "start",
       }}
-      className="w-[90%]"
+      className="w-[90%] "
     >
       <CarouselContent>
         {Necklace.map((product, index) => (
