@@ -6,17 +6,20 @@ import NewsLetter from '@/components/NewsLetter'
 import Services from '@/components/Services'
 import Showcase from '@/components/Shocase'
 import React from 'react'
+import banner from "/assets/Images/slider/side3.png";
+import Products from '@/components/Products'
 
 const Home = () => {
   return (
-    <div>
+    <div className='container-fluid overflow-hidden'>
       <JewelryCarousel/>
       <Services/>
       <JewellerySection/>
       <Showcase/>
-      <Banner/>
+      <Banner src={banner}/>
       <BestsalerSection/>
       <NewsLetter/>
+      <Products/>
     </div>
   )
 }

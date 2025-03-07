@@ -1,11 +1,12 @@
 import React from "react";
 import { useState } from "react";
 import { ChevronDown, Menu, X, Instagram, Facebook, MessageCircle } from "lucide-react";
+import { Link } from "react-router-dom";
 
 // Navigation data
 const navItems = [
   {
-    title: "HOME",
+    title: "Home",
     path: "/",
     hasDropdown: false,
     dropdownItems: [
@@ -15,37 +16,32 @@ const navItems = [
     ],
   },
   {
-    title: "PAGES",
-    path: "/pages",
+    title: "About",
+    path: "/about",
     hasDropdown: false,
-    dropdownItems: [
-      { title: "About Us", path: "/about" },
-      { title: "Services", path: "/services" },
-      { title: "FAQ", path: "/faq" },
-    ],
   },
   {
-    title: "SHOP",
-    path: "/shop",
+    title: "Necklaces",
+    path: "/necklaces",
     hasDropdown: false,
-    dropdownItems: [
-      { title: "Products", path: "/products" },
-      { title: "Cart", path: "/cart" },
-      { title: "Checkout", path: "/checkout" },
-    ],
   },
   {
-    title: "BLOG",
-    path: "/blog",
+    title: "Earrings",
+    path: "/earrings",
     hasDropdown: false,
-    dropdownItems: [
-      { title: "Blog Grid", path: "/blog-grid" },
-      { title: "Blog List", path: "/blog-list" },
-      { title: "Blog Details", path: "/blog-details" },
-    ],
   },
   {
-    title: "CONTACT US",
+    title: "Bangels",
+    path: "/bangels",
+    hasDropdown: false,
+  },
+  {
+    title: "Anklets",
+    path: "/anklets",
+    hasDropdown: false,
+  },
+  {
+    title: "Contact",
     path: "/contact",
     hasDropdown: false,
   },
@@ -74,9 +70,9 @@ const Navbar = () => {
         <div className="flex justify-between h-16 items-center">
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
-            <a href="/" className="text-3xl font-bold text-gray-900">
+            <Link to="/" className="text-3xl font-bold text-gray-900">
               <img src="assets/Images/logo/logo.png" alt="" srcset=""  className="h-16"/>
-            </a>
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
@@ -87,7 +83,9 @@ const Navbar = () => {
                   className="flex items-center text-gray-900 px-2 py-2 text-sm font-medium hover:text-gray-600 focus:outline-none"
                   onClick={() => item.hasDropdown && toggleDropdown(index)}
                 >
+                  <Link to={item.path}>
                   {item.title}
+                  </Link>
                   {item.hasDropdown && (
                     <ChevronDown
                       className={`ml-1 h-4 w-4 transition-transform ${
@@ -102,13 +100,13 @@ const Navbar = () => {
                   <div className="absolute z-10 left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
                     <div className="py-1">
                       {item.dropdownItems?.map((dropdownItem, dropdownIndex) => (
-                        <a
+                        <Link
                           key={dropdownIndex}
-                          href={dropdownItem.path}
+                          to={dropdownItem.path}
                           className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                         >
                           {dropdownItem.title}
-                        </a>
+                        </Link>
                       ))}
                     </div>
                   </div>
@@ -204,7 +202,9 @@ const Navbar = () => {
                     className="w-full flex items-center justify-between px-3 py-2 text-base font-medium text-gray-900 hover:bg-gray-100 rounded-md"
                     onClick={() => item.hasDropdown && toggleMobileDropdown(index)}
                   >
+                    <Link to={item.path}>
                     <span>{item.title}</span>
+                    </Link>
                     {item.hasDropdown && (
                       <ChevronDown
                         className={`ml-1 h-4 w-4 transition-transform ${
