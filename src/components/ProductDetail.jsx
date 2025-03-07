@@ -12,6 +12,7 @@ import {
   Truck,
 } from "lucide-react";
 import { products } from "@/data/resource";
+import ProductCard from "./ProductCard";
 
 // Flatten all products into a single array
 const flattenedProducts = Object.values(products).flat();
@@ -81,7 +82,7 @@ export default function ProductDetail() {
       <div className="bg-white shadow-sm">
         <div className="container mx-auto px-4 py-3">
           <Link
-            href="/"
+            to="/"
             className="flex items-center text-amber-800 hover:text-amber-600"
           >
             <ArrowLeft size={18} className="mr-2" />
@@ -271,36 +272,7 @@ export default function ProductDetail() {
                 data-aos-delay="100"
               >
                 <Link to={`/product/${similarProduct.id}`}>
-                  <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
-                    <div className="relative h-64 overflow-hidden">
-                      <img
-                        src={similarProduct.image || "/placeholder.svg"}
-                        alt={similarProduct.name}
-                        className="w-full h-full object-cover"
-                      />
-                      {similarProduct.discount && (
-                        <span className="absolute top-2 right-2 bg-amber-600 text-white text-xs font-bold px-2 py-1 rounded">
-                          {similarProduct.discount}% OFF
-                        </span>
-                      )}
-                    </div>
-                    <div className="p-4">
-                      <h3 className="text-amber-900 font-medium text-lg mb-1 truncate">
-                        {similarProduct.name}
-                      </h3>
-                      <div className="flex items-center gap-2">
-                        <span className="text-amber-800 font-bold">
-                          ₹{similarProduct.price.toFixed(2)}
-                        </span>
-                        {similarProduct.originalPrice >
-                          similarProduct.price && (
-                          <span className="text-amber-500 text-sm line-through">
-                            ₹{similarProduct.originalPrice.toFixed(2)}
-                          </span>
-                        )}
-                      </div>
-                    </div>
-                  </div>
+                  <ProductCard product={similarProduct} />
                 </Link>
               </div>
             ))}
