@@ -35,7 +35,7 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="container-fluid mx-auto px-4 overflow-hidden">
+    <div className="container-fluid mx-auto sm:px-0 overflow-hidden">
       <Banner src={src}/>
       <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto sm:px-20 sm:py-28 py-7" >
         <Card className="shadow-md  ">

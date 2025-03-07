@@ -19,7 +19,6 @@ const Home = () => {
       <Banner src={banner}/>
       <BestsalerSection/>
       <NewsLetter/>
-      <Products/>
     </div>
   )
 }

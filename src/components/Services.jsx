@@ -25,7 +25,7 @@ const Services = () => {
   ];
 
   return (
-    <div className="container py-14 flex justify-center px-4">
+    <div className="container-fluid py-14 flex justify-center items-center ">
       <div className="flex flex-col md:flex-row gap-8 md:gap-16 justify-center max-w-7xl">
         {icons.map((icon, index) => (
           <div className="flex items-center gap-4 text-center md:text-left" key={index}>
