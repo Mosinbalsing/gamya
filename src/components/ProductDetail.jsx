@@ -18,6 +18,7 @@ import ProductCard from "./ProductCard";
 const flattenedProducts = Object.values(products).flat();
 console.log("params", flattenedProducts);
 export default function ProductDetail() {
+  const navigate = useNavigate();
   const params = useParams();
   const router = useNavigate();
   const [product, setProduct] = useState(null);
@@ -80,14 +81,11 @@ export default function ProductDetail() {
     <div className="min-h-screen bg-amber-50">
       {/* Navigation */}
       <div className="bg-white shadow-sm">
-        <div className="container mx-auto px-4 py-3">
-          <Link
-            to="/"
-            className="flex items-center text-amber-800 hover:text-amber-600"
-          >
+        <div className="container mx-auto px-4 py-3 flex items-center cursor-pointer" onClick={() => navigate(-1)}>
+          
             <ArrowLeft size={18} className="mr-2" />
             <span>Back to Jewellery Collection</span>
-          </Link>
+    
         </div>
       </div>
 
