@@ -7,7 +7,7 @@ import Services from '@/components/Services'
 import Showcase from '@/components/Shocase'
 import React from 'react'
 import banner from "/assets/Images/slider/side3.png";
-import Products from '@/components/Products'
+
 
 const Home = () => {
   return (
