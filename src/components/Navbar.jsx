@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { ChevronDown, Menu, X, Instagram, Facebook, MessageCircle } from "lucide-react";
+import { Menu, X, Instagram, Facebook, MessageCircle, FacebookIcon, InstagramIcon } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const navItems = [
@@ -7,10 +7,24 @@ const navItems = [
   { title: "About", path: "/about" },
   { title: "Necklaces", path: "/necklaces" },
   { title: "Earrings", path: "/earrings" },
-  { title: "Bangels", path: "/bangels" },
+  { title: "Bangles", path: "/bangles" },
   { title: "Anklets", path: "/anklets" },
   { title: "Contact", path: "/contact" },
 ];
+
+const SocialIcons = ({ className }) => (
+  <div className={`flex space-x-4 ${className}`}>
+    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-gray-900 hover:text-gray-600">
+      <InstagramIcon className="h-5 w-5" />
+    </a>
+    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-gray-900 hover:text-gray-600">
+      <FacebookIcon className="h-5 w-5" />
+    </a>
+    <a href="https://wa.me/yournumber" target="_blank" rel="noopener noreferrer" className="text-gray-900 hover:text-gray-600">
+      <MessageCircle className="h-5 w-5" />
+    </a>
+  </div>
+);
 
 const Navbar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -25,7 +39,7 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
             <Link to="/" className="text-3xl font-bold text-gray-900">
-              <img src="assets/Images/logo/logo.png" alt="Logo" className="h-16" />
+              <img src="/assets/Images/logo/logo.png" alt="Logo" className="h-16" />
             </Link>
           </div>
 
@@ -36,19 +50,8 @@ const Navbar = () => {
                 {item.title}
               </Link>
             ))}
-          </div>
-
-          {/* Social Icons (Visible only on Laptops & Desktops) */}
-          <div className="hidden lg:flex lg:items-center lg:space-x-4">
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-gray-900 hover:text-gray-600">
-              <Instagram className="h-5 w-5" />
-            </a>
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-gray-900 hover:text-gray-600">
-              <Facebook className="h-5 w-5" />
-            </a>
-            <a href="https://wa.me/yournumber" target="_blank" rel="noopener noreferrer" className="text-gray-900 hover:text-gray-600">
-              <MessageCircle className="h-5 w-5" />
-            </a>
+            {/* Social Icons for Desktop */}
+            <SocialIcons className="ml-auto" />
           </div>
 
           {/* Hamburger Menu (Visible on Tablets & Mobile) */}
@@ -73,12 +76,16 @@ const Navbar = () => {
           </button>
 
           {/* Sidebar Menu */}
-          <div className="mt-12 px-4">
+          <div className="mt-12 px-4 flex flex-col h-full">
             {navItems.map((item, index) => (
               <Link key={index} to={item.path} onClick={closeSidebar} className="block py-2 text-gray-900 hover:text-gray-600">
                 {item.title}
               </Link>
             ))}
+            {/* Spacer to push social icons to the bottom */}
+            <div className="flex-grow"></div>
+            {/* Social Icons for Mobile */}
+            <SocialIcons className="pb-4" />
           </div>
         </div>
       </div>
