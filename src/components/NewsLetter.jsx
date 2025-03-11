@@ -2,7 +2,7 @@ import React from 'react'
 
 const NewsLetter = () => {
   return (
-    <div className='container-fluid bg-[url(assets/Images/banner/newsletter.png)] bg-cover bg-center h-[400px]'>
+    <div className='container-fluid bg-[url(assets/Images/banner/aboutbanner.png)] bg-cover bg-center h-[400px]'>
         <div className='flex justify-center items-center h-full'>
             <div className=' bg-opacity-80 p-4 rounded-lg gap-3 flex flex-col'>
                 <h1 className='text-3xl text-center font-bold text-white'>Subscribe to our Newsletter</h1>
