@@ -1,11 +1,10 @@
-import React from 'react';
+import aboutbanner from '/assets/Images/banner/newsletter.png';
 
 const NewsLetter = () => {
   return (
     <div className="relative h-[400px]">
-      {/* Image tag set behind the content */}
       <img
-        src="/assets/Images/banner/newsletter.png"
+        src={aboutbanner}
         alt="Newsletter Banner"
         className="absolute inset-0 w-full h-full object-cover"
       />
