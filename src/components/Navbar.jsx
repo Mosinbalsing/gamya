@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Menu, X, Instagram, Facebook, MessageCircle, FacebookIcon, InstagramIcon } from "lucide-react";
+import { Menu, X, Instagram, Facebook, MessageCircle, InstagramIcon, FacebookIcon } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const navItems = [
@@ -35,7 +35,7 @@ const Navbar = () => {
   return (
     <nav className="bg-[#FFF8E9] shadow-sm sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16 items-center">
+        <div className="flex justify-between items-center h-20"> {/* Increased height from h-16 to h-20 */}
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
             <Link to="/" className="text-3xl font-bold text-gray-900">
@@ -77,15 +77,27 @@ const Navbar = () => {
 
           {/* Sidebar Menu */}
           <div className="mt-12 px-4 flex flex-col h-full">
+            {/* Logo in Sidebar */}
+            <div className="flex-shrink-0 flex items-center mb-8">
+              <Link to="/" className="text-3xl font-bold text-gray-900">
+                <img src="/assets/Images/logo/logo.png" alt="Logo" className="h-16" />
+              </Link>
+            </div>
+
+            {/* Social Icons directly below Logo */}
+            <div className="mb-8">
+              <SocialIcons />
+            </div>
+            
+            {/* Navigation Items */}
             {navItems.map((item, index) => (
               <Link key={index} to={item.path} onClick={closeSidebar} className="block py-2 text-gray-900 hover:text-gray-600">
                 {item.title}
               </Link>
             ))}
-            {/* Spacer to push social icons to the bottom */}
+
+            {/* Spacer to push navigation links upwards */}
             <div className="flex-grow"></div>
-            {/* Social Icons for Mobile */}
-            <SocialIcons className="pb-4" />
           </div>
         </div>
       </div>
