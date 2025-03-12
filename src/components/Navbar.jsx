@@ -37,16 +37,16 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20"> {/* Increased height from h-16 to h-20 */}
           {/* Logo */}
-          <div className="flex-shrink-0 flex items-center">
-            <Link to="/" className="text-3xl font-bold text-gray-900">
-              <img src="/assets/Images/logo/logo.png" alt="Logo" className="h-16" />
+          <div className="flex-shrink-0 flex items-center py-8">
+            <Link to="/" className="text-3xl font-bold my-8">
+              <img src="/assets/Images/logo/gamya.png" alt="Logo" className="h-16" />
             </Link>
           </div>
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex lg:items-center lg:space-x-8">
             {navItems.map((item, index) => (
-              <Link key={index} to={item.path} className="text-gray-900 hover:text-gray-600">
+              <Link key={index} to={item.path} className="text-gray-900 font-bold hover:text-gray-600">
                 {item.title}
               </Link>
             ))}
@@ -80,7 +80,7 @@ const Navbar = () => {
             {/* Logo in Sidebar */}
             <div className="flex-shrink-0 flex items-center mb-8">
               <Link to="/" className="text-3xl font-bold text-gray-900">
-                <img src="/assets/Images/logo/logo.png" alt="Logo" className="h-16" />
+                <img src="/assets/Images/logo/gamya.png" alt="Logo" className="h-16" />
               </Link>
             </div>
 
@@ -91,7 +91,7 @@ const Navbar = () => {
             
             {/* Navigation Items */}
             {navItems.map((item, index) => (
-              <Link key={index} to={item.path} onClick={closeSidebar} className="block py-2 text-gray-900 hover:text-gray-600">
+              <Link key={index} to={item.path} onClick={closeSidebar} className="block py-2 text-gray-900 hover:text-gray-600 font-bold">
                 {item.title}
               </Link>
             ))}

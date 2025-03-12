@@ -1,15 +1,31 @@
+import { FacebookIcon, InstagramIcon, MessageCircle } from "lucide-react";
+
+const SocialIcons = ({ className }) => (
+  <div className={`flex space-x-4 ${className}`}>
+    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-gray-900 hover:text-gray-600">
+      <InstagramIcon className="h-5 w-5" />
+    </a>
+    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-gray-900 hover:text-gray-600">
+      <FacebookIcon className="h-5 w-5" />
+    </a>
+    <a href="https://wa.me/yournumber" target="_blank" rel="noopener noreferrer" className="text-gray-900 hover:text-gray-600">
+      <MessageCircle className="h-5 w-5" />
+    </a>
+  </div>
+);
+
 export default function Footer() {
     return (
       <footer className="bg-[#e8d5b0] text-[#7d5a45] px-4 md:px-8 lg:px-16 pt-8 pb-4">
         {/* Logo Section */}
         <div className="flex justify-center mb-8">
-          <img src="assets/Images/logo/logo.png" alt="Gamya Collections" className="h-24" />
+          <img src="/assets/Images/logo/gamya.png" alt="Gamya Collections" className="h-24" />
         </div>
   
         {/* Main Footer Content */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8 pb-8">
           {/* Newsletter Section */}
-          <div>
+          <div> 
             <h3 className="text-xl font-medium mb-4">Newsletter</h3>
             <p className="mb-4">Be the first to know about sales, new product launches and exclusive offers!</p>
             <div className="flex gap-2">
@@ -117,17 +133,7 @@ export default function Footer() {
         {/* Bottom Footer */}
         <div className="flex flex-col md:flex-row justify-between items-center">
           {/* Social Media Links */}
-          <div className="flex gap-4 mb-4 md:mb-0">
-            <a href="#" className="hover:opacity-80">
-              Facebook
-            </a>
-            <a href="#" className="hover:opacity-80">
-              Instagram
-            </a>
-            <a href="#" className="hover:opacity-80">
-              Pinterest
-            </a>
-          </div>
+          <SocialIcons />
   
           {/* Copyright */}
           <div className="text-center mb-4 md:mb-0">
@@ -135,13 +141,13 @@ export default function Footer() {
           </div>
   
           {/* Payment Methods */}
-          <div className="flex gap-2">
+          {/* <div className="flex gap-2">
             <img src="/mastercard.png" alt="Mastercard" className="h-8 bg-[#8b4513] p-1 rounded" />
             <img src="/visa.png" alt="Visa" className="h-8 bg-[#8b4513] p-1 rounded" />
             <img src="/rupay.png" alt="RuPay" className="h-8 bg-[#8b4513] p-1 rounded" />
             <img src="/paypal.png" alt="PayPal" className="h-8 bg-[#8b4513] p-1 rounded" />
             <img src="/gpay.png" alt="GPay" className="h-8 bg-[#8b4513] p-1 rounded" />
-          </div>
+          </div> */}
         </div>
       </footer>
     )

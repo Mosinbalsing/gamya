@@ -81,17 +81,20 @@ const  Necklace=[
 
 const BestsalerSection = () => {
   return (
-    <div className="container-fluid py-14 flex justify-center h-auto px-9 md:px-8 lg:px-16 overflow-hidden">
+    <div className="container-fluid py-14 flex flex-col justify-center items-center h-auto px-9 md:px-8 lg:px-16 overflow-hidden gap-4">
+      <h2 className="text-4xl font-serif text-amber-900 mb-3">
+          Bestseller Saler
+        </h2>
         <Carousel
       opts={{
         align: "start",
       }}
       className="w-[90%] "
     >
-      <CarouselContent>
+      <CarouselContent className="pl-4  ">
         {Necklace.map((product, index) => (
-          <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/4 sm:basis-1/1 w-full h-auto p-0 m-0">
-            <div className="p-1">
+          <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/4 sm:basis-1/1 w-full h-auto p-0 ml-2 m-0">
+            <div className="p-2">
               <ProductCard product={product} />
             </div>
           </CarouselItem>
