@@ -36,7 +36,7 @@ export default function JewellerySection() {
           Jewellery Category
         </h2>
         <p className="text-amber-800 max-w-2xl mx-auto">
-          Accumsan vitae pede lacus ut ullamcorper sollicitudin quisque libero
+        Amutation Jewelry offers a stunning collection of necklaces, earrings, bangles, and anklets, each crafted with intricate designs and high-quality materials. Their pieces are perfect for elevating any outfit with elegance and style. Whether modern or classic, Amutation Jewelry adds a sophisticated touch to every look.
         </p>
       </div>
 

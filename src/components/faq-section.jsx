@@ -79,7 +79,7 @@ export default function FAQSection() {
           </ul>
         </div>
 
-        <button className="bg-teal-900 text-white px-6 py-3 flex items-center rounded-sm hover:bg-teal-800 transition-colors">
+        <button className="bg-[#A63C15] text-white px-6 py-3 flex items-center rounded-sm hover:bg-teal-800 transition-colors font-bold">
           Submit A Query
           <ArrowRight className="ml-2 h-5 w-5" />
         </button>

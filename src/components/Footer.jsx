@@ -2,13 +2,13 @@ import { FacebookIcon, InstagramIcon, MessageCircle } from "lucide-react";
 
 const SocialIcons = ({ className }) => (
   <div className={`flex space-x-4 ${className}`}>
-    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-gray-900 hover:text-gray-600">
+    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-gray-900 hover:text-[#A63C15]">
       <InstagramIcon className="h-5 w-5" />
     </a>
-    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-gray-900 hover:text-gray-600">
+    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-gray-900 hover:text-[#A63C15]">
       <FacebookIcon className="h-5 w-5" />
     </a>
-    <a href="https://wa.me/yournumber" target="_blank" rel="noopener noreferrer" className="text-gray-900 hover:text-gray-600">
+    <a href="https://wa.me/yournumber" target="_blank" rel="noopener noreferrer" className="text-gray-900 hover:text-[#A63C15]">
       <MessageCircle className="h-5 w-5" />
     </a>
   </div>

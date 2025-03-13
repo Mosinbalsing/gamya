@@ -101,7 +101,7 @@ export default function ContactForm() {
                   .
                 </Label>
               </div>
-              <Button type="submit" className="w-full bg-zinc-900 hover:bg-zinc-800">
+              <Button type="submit" className="w-full bg-[#a63c15] hover:bg-[#cf6b47] ">
                 SEND MESSAGE
               </Button>
             </form>
@@ -116,7 +116,7 @@ export default function ContactForm() {
           </div>
           <div className="space-y-2">
             <div className="flex items-start gap-4">
-              <div className="bg-zinc-900 p-3 rounded-md">
+              <div className="bg-[#a63c15]  p-3 rounded-md">
                 <Building className="h-5 w-5 text-white" />
               </div>
               <div>
@@ -129,7 +129,7 @@ export default function ContactForm() {
           </div>
           <div className="space-y-2">
             <div className="flex items-start gap-4">
-              <div className="bg-zinc-900 p-3 rounded-md">
+              <div className="bg-[#a63c15]  p-3 rounded-md">
                 <Phone className="h-5 w-5 text-white" />
               </div>
               <div>

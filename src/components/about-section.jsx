@@ -8,22 +8,22 @@ export default function AboutSection() {
         <div className="lg:col-span-5 relative">
           <div className="relative">
             <img
-              src="/assets/placeholder.svg?height=700&width=600"
+              src="/assets/Images/about/full1.png"
               alt="Elegant jewelry model"
-              className="w-full rounded-t-full h-[700px]"
+              className="w-full rounded-t-full h-auto"
             />
 
             {/* Curved text overlay */}
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="w-full h-full relative">
-                <span
+                {/* <span
                   className="absolute inset-0 flex items-center justify-center text-white text-lg font-light"
                   style={{
                     transform: "rotate(-30deg) translateY(-140px)",
                   }}
                 >
                   A Touch Of Glamour, A Lifetime Of Memorie
-                </span>
+                </span> */}
               </div>
             </div>
           </div>
@@ -50,7 +50,6 @@ export default function AboutSection() {
             {[
               { number: 300, label: "Unique Designs", suffix: "+" },
               { number: 2000, label: "User Reviews", suffix: "" },
-             
             ].map((stat, index) => (
               <div key={index} className="bg-amber-50/50 p-4 text-center">
                 <div className="text-2xl font-bold">
@@ -74,7 +73,7 @@ export default function AboutSection() {
             Egestas Fermentum Pulvinar"
           </p>
 
-          <button className="bg-black text-white px-8 py-3 flex items-center gap-2">
+          <button className="bg-[#A63C15] text-white px-8 py-3 flex items-center gap-2 font-bold">
             Shop Now
             <span>→</span>
           </button>
@@ -83,9 +82,9 @@ export default function AboutSection() {
         {/* Right Image Column */}
         <div className="lg:col-span-2">
           <img
-            src="/assets/placeholder.svg?height=400&width=300"
+            src="/assets/Images/about/full2.png"
             alt="Layered necklaces"
-            className="w-full rounded-t-full h-[300px]"
+            className="w-auto h-auto rounded-t-full object-cover object-bottom scale-250"
           />
         </div>
       </div>

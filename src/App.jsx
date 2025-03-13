@@ -53,7 +53,7 @@ function ScrollButton() {
     visible && (
       <button
         onClick={scrollToTop}
-        className="fixed bottom-6 right-6 bg-blue-500 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition duration-300"
+        className="fixed bottom-6 right-6 bg-[#A63C15] text-white p-3 rounded-full shadow-lg hover:bg-[#e67a52] transition duration-300"
       >
         <FaArrowUp size={20} />
       </button>
@@ -65,7 +65,7 @@ function App() {
   return (
     <Router>
       <ClickSpark
-        sparkColor="#000"
+        sparkColor="#a63c15"
         sparkSize={10}
         sparkRadius={15}
         sparkCount={8}

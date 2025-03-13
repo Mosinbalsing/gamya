@@ -18,22 +18,22 @@ export default function FeaturesSection() {
     {
       icon: <Gift size={24} />,
       title: "Exclusive Gift",
-      description: "Adipiscing Nostra Per Porttitor Tellus Tellus Lectus Cursus Inceptos.",
+      description: "An exclusive gift that embodies elegance and thoughtfulness, perfect for any special occasion..",
     },
     {
       icon: <Percent size={24} />,
       title: "Seasonal Discounts",
-      description: "Conubia Turpis Amet Laoreet Faucibus Aenean Consectetur Pulvinar Metus.",
+      description: "Enjoy exclusive seasonal discounts on our exquisite jewelry collection, perfect for adding a touch of elegance at a great price.",
     },
     {
       icon: <Truck size={24} />,
       title: "Free Delivery",
-      description: "Turpis Ac Per Magnis Sagittis Consectetur Orci Imperdiet Pulvinar.",
+      description: "Enjoy free delivery on all orders, bringing your favorite jewelry right to your doorstep with no extra cost.",
     },
     {
       icon: <DollarSign size={24} className="mr-1" />,
       title: "Budget-Friendly",
-      description: "Placerat Mattis Class Lacinia Fusce Taciti Integer Consequat Mollis.",
+      description: "Discover budget-friendly jewelry options that combine style, quality, and affordability without compromising on elegance.",
     },
   ]
 

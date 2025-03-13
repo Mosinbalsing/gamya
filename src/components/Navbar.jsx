@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Menu, X, Instagram, Facebook, MessageCircle, InstagramIcon, FacebookIcon } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom"; // Import NavLink for active link styles
 
 const navItems = [
   { title: "Home", path: "/" },
@@ -14,13 +14,28 @@ const navItems = [
 
 const SocialIcons = ({ className }) => (
   <div className={`flex space-x-4 ${className}`}>
-    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-gray-900 hover:text-gray-600">
+    <a
+      href="https://instagram.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-gray-900 hover:text-[#A63C15] transition-colors"
+    >
       <InstagramIcon className="h-5 w-5" />
     </a>
-    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-gray-900 hover:text-gray-600">
+    <a
+      href="https://facebook.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-gray-900 hover:text-[#A63C15] transition-colors"
+    >
       <FacebookIcon className="h-5 w-5" />
     </a>
-    <a href="https://wa.me/yournumber" target="_blank" rel="noopener noreferrer" className="text-gray-900 hover:text-gray-600">
+    <a
+      href="https://wa.me/yournumber"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-gray-900 hover:text-[#A63C15] transition-colors"
+    >
       <MessageCircle className="h-5 w-5" />
     </a>
   </div>
@@ -35,7 +50,7 @@ const Navbar = () => {
   return (
     <nav className="bg-[#FFF8E9] shadow-sm sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20"> {/* Increased height from h-16 to h-20 */}
+        <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center py-8">
             <Link to="/" className="text-3xl font-bold my-8">
@@ -46,9 +61,17 @@ const Navbar = () => {
           {/* Desktop Navigation */}
           <div className="hidden lg:flex lg:items-center lg:space-x-8">
             {navItems.map((item, index) => (
-              <Link key={index} to={item.path} className="text-gray-900 font-bold hover:text-gray-600">
+              <NavLink
+                key={index}
+                to={item.path}
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-[#A63C15] font-bold" // Active link color
+                    : "text-gray-900 font-bold hover:text-[#A63C15] transition-colors"
+                }
+              >
                 {item.title}
-              </Link>
+              </NavLink>
             ))}
             {/* Social Icons for Desktop */}
             <SocialIcons className="ml-auto" />
@@ -88,12 +111,21 @@ const Navbar = () => {
             <div className="mb-8">
               <SocialIcons />
             </div>
-            
+
             {/* Navigation Items */}
             {navItems.map((item, index) => (
-              <Link key={index} to={item.path} onClick={closeSidebar} className="block py-2 text-gray-900 hover:text-gray-600 font-bold">
+              <NavLink
+                key={index}
+                to={item.path}
+                onClick={closeSidebar}
+                className={({ isActive }) =>
+                  isActive
+                    ? "block py-2 text-[#A63C15] font-bold transition-colors" // Active link color for sidebar
+                    : "block py-2 text-gray-900 hover:text-[#A63C15] font-bold transition-colors"
+                }
+              >
                 {item.title}
-              </Link>
+              </NavLink>
             ))}
 
             {/* Spacer to push navigation links upwards */}

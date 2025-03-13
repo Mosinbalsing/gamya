@@ -10,8 +10,8 @@ const JewelryCarousel=()=> {
   const [api, setApi] = useState();
   const [count, setCount] = useState(0);
   const demoImages = [
-    "assets/Images/slider/gamya-banner-1.png",
-    "assets/Images/slider/gamya-banner-2.png",
+    "assets/Images/slider/GAMYABANNER1.png",
+    "assets/Images/slider/gamyabanner2.png",
     "assets/Images/slider/gamya-banner-3.png",
     
   ]
