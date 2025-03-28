@@ -1,35 +1,20 @@
 import React, { useState } from "react";
 import { Menu, X, Instagram, Facebook, MessageCircle, InstagramIcon, FacebookIcon } from "lucide-react";
 import { Link, NavLink } from "react-router-dom"; // Import NavLink for active link styles
+import { Button } from "./ui/button";
 
 const navItems = [
   { title: "Home", path: "/" },
   { title: "About", path: "/about" },
   { title: "Necklaces", path: "/necklaces" },
   { title: "Earrings", path: "/earrings" },
-  { title: "Bangles", path: "/bangles" },
   { title: "Anklets", path: "/anklets" },
   { title: "Contact", path: "/contact" },
 ];
 
 const SocialIcons = ({ className }) => (
   <div className={`flex space-x-4 ${className}`}>
-    <a
-      href="https://instagram.com"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="text-gray-900 hover:text-[#A63C15] transition-colors"
-    >
-      <InstagramIcon className="h-5 w-5" />
-    </a>
-    <a
-      href="https://facebook.com"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="text-gray-900 hover:text-[#A63C15] transition-colors"
-    >
-      <FacebookIcon className="h-5 w-5" />
-    </a>
+   
     <a
       href="https://wa.me/yournumber"
       target="_blank"
@@ -59,7 +44,7 @@ const Navbar = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex lg:items-center lg:space-x-8">
+          <div className="hidden lg:flex lg:items-center lg:space-x-8  m-auto">
             {navItems.map((item, index) => (
               <NavLink
                 key={index}
@@ -74,7 +59,7 @@ const Navbar = () => {
               </NavLink>
             ))}
             {/* Social Icons for Desktop */}
-            <SocialIcons className="ml-auto" />
+            
           </div>
 
           {/* Hamburger Menu (Visible on Tablets & Mobile) */}
@@ -107,9 +92,10 @@ const Navbar = () => {
               </Link>
             </div>
 
-            {/* Social Icons directly below Logo */}
+            
             <div className="mb-8">
-              <SocialIcons />
+              {/* <SocialIcons /> */}
+              
             </div>
 
             {/* Navigation Items */}
@@ -129,7 +115,9 @@ const Navbar = () => {
             ))}
 
             {/* Spacer to push navigation links upwards */}
-            <div className="flex-grow"></div>
+            <div className="flex-grow">
+              
+            </div>
           </div>
         </div>
       </div>

@@ -9,6 +9,7 @@ const ProductCard = ({ product }) => {
   const handleClick = () => {
     navigate(`/product/${product.id}`);
   };
+
   return (
     <div
       className="group relative bg-white rounded-lg overflow-hidden shadow-md transition-all duration-300 hover:shadow-xl"
@@ -32,17 +33,12 @@ const ProductCard = ({ product }) => {
               NEW
             </span>
           )}
-          {product.discount && (
-            <span className="bg-teal-600 text-white text-xs font-bold px-2 py-1">
-              {product.discount}%
-            </span>
-          )}
         </div>
       </div>
 
       {/* Product Info */}
       <div className="p-4 bg-white">
-        <h3 className="text-amber-900 font-medium text-lg mb-2">
+        <h3 className="text-amber-900 font-medium text-lg mb-2 whitespace-nowrap overflow-hidden text-ellipsis">
           {product.name}
         </h3>
         <div className="flex items-center gap-2">
@@ -63,7 +59,10 @@ const ProductCard = ({ product }) => {
           isHovered ? "opacity-100" : "opacity-0 pointer-events-none"
         }`}
       >
-        <button className="bg-white text-amber-900 px-4 py-2 rounded-full font-medium transform transition-transform duration-300 hover:scale-105" onClick={handleClick}>
+        <button
+          className="bg-white text-amber-900 px-4 py-2 rounded-full font-medium transform transition-transform duration-300 hover:scale-105"
+          onClick={handleClick}
+        >
           Quick View
         </button>
       </div>

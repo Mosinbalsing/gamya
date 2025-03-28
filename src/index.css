@@ -118,3 +118,18 @@
 .news{
   background-image: url('/assets/Images/banner/newsletter.png');
 }
+/* Hide scrollbar for the product grid */
+.hide-scrollbar {
+  scrollbar-width: none; /* For Firefox */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
+
+/* Apply styles only on larger screens */
+@media (min-width: 1024px) { 
+  .hide-scrollbar{
+    overflow-y: auto; /* Enable scrolling*/
+  }
+}

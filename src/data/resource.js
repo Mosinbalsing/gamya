@@ -114,7 +114,7 @@ export const products = {
     },
     {
       id: 5,
-      name: "Invisible necklace",
+      name: "Invisible Chain necklace",
       price: 600.0,
       originalPrice: 800.0,
       image: "/assets/Images/necklace/necklace-5.jpg",
@@ -279,8 +279,8 @@ export const products = {
     {
       id: 11,
       name: "Maharashtrian Belpan tik Thushi necklace",
-      price: 600.0,
-      originalPrice: 800.0,
+      price: 1400.0,
+      originalPrice: 1600.0,
       image: "/assets/Images/necklace/necklace-11.jpg",
       images: [
         "/placeholder.svg?height=600&width=600",
@@ -307,8 +307,8 @@ export const products = {
     {
       id: 12,
       name: "Copper finish laxmi necklace set ",
-      price: 600.0,
-      originalPrice: 800.0,
+      price: 1800.0,
+      originalPrice: 2000.0,
       image: "/assets/Images/necklace/necklace-12.jpg",
       images: [
         "/placeholder.svg?height=600&width=600",
@@ -362,9 +362,9 @@ export const products = {
     },
     {
       id: 14,
-      name: "Pink Peacock Hasli",
-      price: 1300.0,
-      originalPrice: 1500.0,
+      name: "Premium brass ruby and green necklace ",
+      price: 1800.0,
+      originalPrice: 2500.0,
       image: "/assets/Images/necklace/necklace-14.jpg",
       images: [
         "/placeholder.svg?height=600&width=600",
@@ -390,10 +390,122 @@ export const products = {
     },
     {
       id: 15,
-      name: "Premium Brass ruby and green Necklace ",
-      price: 1800.0,
-      originalPrice: 2000.0,
+      name: "Pink Peacock Hasli Necklace",
+      price: 1300.0,
+      originalPrice: 1500.0,
       image: "/assets/Images/necklace/necklace-15.jpg",
+      images: [
+        "/placeholder.svg?height=600&width=600",
+        "/placeholder.svg?height=600&width=600&text=Image+2",
+        "/placeholder.svg?height=600&width=600&text=Image+3",
+        "/placeholder.svg?height=600&width=600&text=Image+4",
+      ],
+      isNew: true,
+      discount: 10,
+      rating: 4.2,
+      reviews: 112,
+      description:
+        "Classic emerald chain featuring a timeless design. The Emerald classic chain is crafted with 22K gold plating and adorned with premium gemstones.",
+      specifications: [
+        { name: "Material", value: "22K Gold Plated" },
+        { name: "Gemstones", value: "Ruby, Emerald" },
+        { name: "Weight", value: "10 grams" },
+        { name: "Chain Length", value: "18 inches" },
+        { name: "Closure Type", value: "Lobster Clasp" },
+        { name: "Occasion", value: "Wedding, Party, Daily Wear" },
+      ],
+      category: "Necklace",
+    },
+    {
+      id: 16,
+      name: "AD moti choker",
+      price: 1500.0,
+      originalPrice: 2000.0,
+      image: "/assets/Images/necklace/necklace-16.jpg",
+      images: [
+        "/placeholder.svg?height=600&width=600",
+        "/placeholder.svg?height=600&width=600&text=Image+2",
+        "/placeholder.svg?height=600&width=600&text=Image+3",
+        "/placeholder.svg?height=600&width=600&text=Image+4",
+      ],
+      isNew: true,
+      discount: 10,
+      rating: 4.2,
+      reviews: 112,
+      description:
+        "Classic emerald chain featuring a timeless design. The Emerald classic chain is crafted with 22K gold plating and adorned with premium gemstones.",
+      specifications: [
+        { name: "Material", value: "22K Gold Plated" },
+        { name: "Gemstones", value: "Ruby, Emerald" },
+        { name: "Weight", value: "10 grams" },
+        { name: "Chain Length", value: "18 inches" },
+        { name: "Closure Type", value: "Lobster Clasp" },
+        { name: "Occasion", value: "Wedding, Party, Daily Wear" },
+      ],
+      category: "Necklace",
+    },
+    {
+      id: 17,
+      name: "Invisible chain necklace",
+      price: 600.0,
+      originalPrice: 999.0,
+      image: "/assets/Images/necklace/necklace-17.jpg",
+      images: [
+        "/placeholder.svg?height=600&width=600",
+        "/placeholder.svg?height=600&width=600&text=Image+2",
+        "/placeholder.svg?height=600&width=600&text=Image+3",
+        "/placeholder.svg?height=600&width=600&text=Image+4",
+      ],
+      isNew: true,
+      discount: 10,
+      rating: 4.2,
+      reviews: 112,
+      description:
+        "Classic emerald chain featuring a timeless design. The Emerald classic chain is crafted with 22K gold plating and adorned with premium gemstones.",
+      specifications: [
+        { name: "Material", value: "22K Gold Plated" },
+        { name: "Gemstones", value: "Ruby, Emerald" },
+        { name: "Weight", value: "10 grams" },
+        { name: "Chain Length", value: "18 inches" },
+        { name: "Closure Type", value: "Lobster Clasp" },
+        { name: "Occasion", value: "Wedding, Party, Daily Wear" },
+      ],
+      category: "Necklace",
+    },
+    {
+      id: 18,
+      name: "Invisible chain necklace",
+      price: 600.0,
+      originalPrice: 999.0,
+      image: "/assets/Images/necklace/necklace-18.jpg",
+      images: [
+        "/placeholder.svg?height=600&width=600",
+        "/placeholder.svg?height=600&width=600&text=Image+2",
+        "/placeholder.svg?height=600&width=600&text=Image+3",
+        "/placeholder.svg?height=600&width=600&text=Image+4",
+      ],
+      isNew: true,
+      discount: 10,
+      rating: 4.2,
+      reviews: 112,
+      description:
+        "Classic emerald chain featuring a timeless design. The Emerald classic chain is crafted with 22K gold plating and adorned with premium gemstones.",
+      specifications: [
+        { name: "Material", value: "22K Gold Plated" },
+        { name: "Gemstones", value: "Ruby, Emerald" },
+        { name: "Weight", value: "10 grams" },
+        { name: "Chain Length", value: "18 inches" },
+        { name: "Closure Type", value: "Lobster Clasp" },
+        { name: "Occasion", value: "Wedding, Party, Daily Wear" },
+      ],
+      category: "Necklace",
+    },
+    {
+      id: 19,
+      name: "Invisible chain necklace",
+      price: 600.0,
+      originalPrice: 999.0,
+      image: "/assets/Images/necklace/necklace-19.jpg",
       images: [
         "/placeholder.svg?height=600&width=600",
         "/placeholder.svg?height=600&width=600&text=Image+2",
@@ -420,9 +532,9 @@ export const products = {
   Earrings: [
     {
       id: 101,
-      name: "Pearl drop earrings",
-      price: 1550.0,
-      originalPrice: 1800.0,
+      name: "Moti Unique Earrings",
+      price: 300.0,
+      originalPrice: 499.0,
       image: "/assets/Images/earrings/earrings-1.jpeg",
       images: [
         "/placeholder.svg?height=600&width=600",
@@ -448,9 +560,9 @@ export const products = {
     },
     {
       id: 102,
-      name: "Gold plated jhumkas",
-      price: 1250.0,
-      originalPrice: 1400.0,
+      name: "Golden Unique kaan",
+      price: 300.0,
+      originalPrice: 499.0,
       image: "/assets/Images/earrings/earrings-2.jpeg",
       images: [
         "/placeholder.svg?height=600&width=600",
@@ -476,9 +588,9 @@ export const products = {
     },
     {
       id: 103,
-      name: "Ruby studded earrings",
-      price: 1800.0,
-      originalPrice: 2000.0,
+      name: "Moti Bugadi Earrings",
+      price: 500.0,
+      originalPrice: 799.0,
       image: "/assets/Images/earrings/earrings-3.jpeg",
       images: [
         "/placeholder.svg?height=600&width=600",
@@ -532,9 +644,9 @@ export const products = {
     },
     {
       id: 105,
-      name: "Gold plated hoops",
-      price: 1350.0,
-      originalPrice: 1500.0,
+      name: "Moti Unique Earrings",
+      price: 300.0,
+      originalPrice: 700.0,
       image: "/assets/Images/earrings/earrings-5.jpeg",
       images: [
         "/placeholder.svg?height=600&width=600",
@@ -560,10 +672,38 @@ export const products = {
     },
     {
       id: 106,
-      name: "Silver jhumkas",
-      price: 1350.0,
-      originalPrice: 1500.0,
+      name: "golden jhumkas",
+      price: 350.0,
+      originalPrice: 500.0,
       image: "/assets/Images/earrings/earrings-6.jpeg",
+      images: [
+        "/placeholder.svg?height=600&width=600",
+        "/placeholder.svg?height=600&width=600&text=Image+2",
+        "/placeholder.svg?height=600&width=600&text=Image+3",
+        "/placeholder.svg?height=600&width=600&text=Image+4",
+      ],
+      isNew: true,
+      discount: 10,
+      rating: 4.2,
+      reviews: 112,
+      description:
+        "Classic emerald chain featuring a timeless design. The Emerald classic chain is crafted with 22K gold plating and adorned with premium gemstones.",
+      specifications: [
+        { name: "Material", value: "22K Gold Plated" },
+        { name: "Gemstones", value: "Ruby, Emerald" },
+        { name: "Weight", value: "10 grams" },
+        { name: "Chain Length", value: "18 inches" },
+        { name: "Closure Type", value: "Lobster Clasp" },
+        { name: "Occasion", value: "Wedding, Party, Daily Wear" },
+      ],
+      category: "Earrings",
+    },
+    {
+      id: 107,
+      name: "Moti Unique jhumkas",
+      price: 300.0,
+      originalPrice: 500.0,
+      image: "/assets/Images/earrings/earrings-7.jpg",
       images: [
         "/placeholder.svg?height=600&width=600",
         "/placeholder.svg?height=600&width=600&text=Image+2",
@@ -588,44 +728,7 @@ export const products = {
     }
 
   ],
-  Bangles: [
-    {
-      id: 9,
-      name: "Hyacinth white stick",
-      price: 900.0,
-      originalPrice: 1100.0,
-      image: "assets/placeholder.svg?height=300&width=300",
-      isNew: true,
-      discount: 15,
-    },
-    {
-      id: 10,
-      name: "Gold plated bangles",
-      price: 1100.0,
-      originalPrice: 1250.0,
-      image: "assets/placeholder.svg?height=300&width=300",
-      isNew: true,
-      discount: 10,
-    },
-    {
-      id: 11,
-      name: "Ruby studded kada",
-      price: 1300.0,
-      originalPrice: 1500.0,
-      image: "assets/placeholder.svg?height=300&width=300",
-      isNew: true,
-      discount: null,
-    },
-    {
-      id: 12,
-      name: "Pearl bracelet",
-      price: 850.0,
-      originalPrice: 950.0,
-      image: "assets/placeholder.svg?height=300&width=300",
-      isNew: true,
-      discount: 10,
-    },
-  ],
+
   Anklets: [
     {
       id: 13,
@@ -752,3 +855,15 @@ export const Necklaces = [
     category: "Necklace",
   },
 ];
+
+
+export const bestsellerProducts = Object.values(products)
+  .flat() // Flatten the array of arrays into a single array
+  .filter(product => product.rating >= 4.5 && product.reviews >= 100);
+
+console.log(bestsellerProducts);
+
+
+
+
+

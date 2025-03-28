@@ -34,25 +34,21 @@ export default function AboutSection() {
           <div className="space-y-4">
             <span className="text-sm tracking-wider">ABOUT US</span>
             <h2 className="text-4xl font-medium">
-              Celebrate Life's Moments With Exquisite Jewelry
+            Timeless Beauty for Every Occasion
             </h2>
             <p className="text-neutral-600 leading-relaxed">
-              Nunc In Arcu Et Nunc Scelerisque Dignissim. Aliquam Enim Nunc,
-              Volutpat Eget Ipsum Id, Varius Sodales Mi. Vestibulum Ante Ipsum
-              Primis In Faucibus Orci Luctus Et Ultrices Posuere Cubilia Curae.
-              Vivamus Ultricies Sed Erat Et Egestas. Phasellus Ut Ex Lacus.
-              Donec Volutpat Lorem Turpis, Nec Sodales.
+            Jewelry is more than just an accessory—it’s a reflection of cherished memories and meaningful moments. At Gamya Collections, we bring you an exquisite selection of handpicked pieces that add grace and elegance to every occasion. Whether it’s a special celebration, a thoughtful gift, or simply a way to treat yourself, our collection ensures you shine beautifully in every chapter of life.
             </p>
           </div>
 
           {/* Stats Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 py-8">
+          <div className="flex flex-wrap gap-4">
             {[
               { number: 300, label: "Unique Designs", suffix: "+" },
               { number: 2000, label: "User Reviews", suffix: "" },
             ].map((stat, index) => (
-              <div key={index} className="bg-amber-50/50 p-4 text-center">
-                <div className="text-2xl font-bold">
+              <div key={index} className="bg-amber-50/50 p-4 text-center flex gap-2 items-center">
+                <div className="text-2xl font-bold flex items-center justify-center">
                   <CountUp
                     from={0}
                     to={stat.number}
@@ -68,12 +64,12 @@ export default function AboutSection() {
             ))}
           </div>
 
-          <p className="text-neutral-500 italic">
+          {/* <p className="text-neutral-500 italic">
             "Maecenas Porta Id Nibh Quis Imperdiet. Quisque Hendrerit, Justo
             Egestas Fermentum Pulvinar"
-          </p>
+          </p> */}
 
-          <button className="bg-[#A63C15] text-white px-8 py-3 flex items-center gap-2 font-bold">
+          <button className="bg-[#A63C15] hover:bg-[#4e341b] text-white px-8 py-3 flex items-center gap-2 font-bold rounded-sm">
             Shop Now
             <span>→</span>
           </button>

@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 import { products } from "@/data/resource";
 import ProductCard from "./ProductCard";
+import WhatsAppEnquiryButton from "./WhatsAppEnquiryButton";
 
 // Flatten all products into a single array
 const flattenedProducts = Object.values(products).flat();
@@ -81,11 +82,12 @@ export default function ProductDetail() {
     <div className="min-h-screen bg-amber-50">
       {/* Navigation */}
       <div className="bg-white shadow-sm">
-        <div className="container mx-auto px-4 py-3 flex items-center cursor-pointer" onClick={() => navigate(-1)}>
-          
-            <ArrowLeft size={18} className="mr-2" />
-            <span>Back to Jewellery Collection</span>
-    
+        <div
+          className="container mx-auto px-4 py-3 flex items-center cursor-pointer"
+          onClick={() => navigate(-1)}
+        >
+          <ArrowLeft size={18} className="mr-2" />
+          <span>Back to Jewellery Collection</span>
         </div>
       </div>
 
@@ -124,15 +126,15 @@ export default function ProductDetail() {
               </div> */}
 
               {/* Action Buttons */}
-              <div className="grid grid-cols-2 gap-4 mt-6">
-                <button className="bg-amber-600 text-white py-3 px-4 rounded-md flex items-center justify-center font-medium hover:bg-amber-700 transition-colors">
-                  <ShoppingCart size={20} className="mr-2" />
-                  Add to Cart
-                </button>
-                <button className="bg-amber-100 text-amber-800 py-3 px-4 rounded-md flex items-center justify-center font-medium hover:bg-amber-200 transition-colors">
-                  <Heart size={20} className="mr-2" />
-                  Add to Wishlist
-                </button>
+              <div className="grid grid-cols-1 m-auto">
+                {/* Enquiry Button */}
+                <WhatsAppEnquiryButton
+                  productName={product.name}
+                  productPrice={product.price}
+                  productUrl={window.location.href} // Use the current page URL
+                  quantity={quantity}
+                  phoneNumber="919730260479" // WhatsApp number to send the enquiry
+                />
               </div>
             </div>
 
@@ -258,7 +260,7 @@ export default function ProductDetail() {
 
       {/* Similar Products Section */}
       {similarProducts.length > 0 && (
-        <div className="container mx-auto px-4 py-12" data-aos="fade-up">
+        <div className="container mx-auto px-10 py-12" data-aos="fade-up">
           <h2 className="text-2xl font-bold text-amber-900 mb-6">
             Similar Products
           </h2>

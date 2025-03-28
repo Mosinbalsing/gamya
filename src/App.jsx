@@ -18,6 +18,7 @@ import Bangels from "./Pages/Bangels";
 import Anklets from "./Pages/Anklets";
 import { FaArrowUp } from "react-icons/fa";
 import ClickSpark from "./components/ClickSpark/ClickSpark";
+import PolicyPage from "./Pages/Policy";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -53,7 +54,7 @@ function ScrollButton() {
     visible && (
       <button
         onClick={scrollToTop}
-        className="fixed bottom-6 right-6 bg-[#A63C15] text-white p-3 rounded-full shadow-lg hover:bg-[#e67a52] transition duration-300"
+        className="fixed bottom-6 right-6 bg-[#A63C15] text-white p-3 rounded-full shadow-lg hover:bg-[#4e341b] transition duration-300"
       >
         <FaArrowUp size={20} />
       </button>
@@ -83,6 +84,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<ContactSection />} />
             <Route path="/product/:id" element={<ProductPage />} />
+            <Route path="/policys" element={<PolicyPage />} />
           </Routes>
         </MainLayout>
         <Footer />

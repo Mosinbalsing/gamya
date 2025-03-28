@@ -1,5 +1,5 @@
 import  React from "react"
-import { Gift, Percent, Truck, DollarSign } from "lucide-react"
+import { Gift, Percent, Truck, IndianRupee } from "lucide-react"
 
 
 
@@ -31,7 +31,7 @@ export default function FeaturesSection() {
       description: "Enjoy free delivery on all orders, bringing your favorite jewelry right to your doorstep with no extra cost.",
     },
     {
-      icon: <DollarSign size={24} className="mr-1" />,
+      icon: <IndianRupee size={24} className="mr-1" />,
       title: "Budget-Friendly",
       description: "Discover budget-friendly jewelry options that combine style, quality, and affordability without compromising on elegance.",
     },
